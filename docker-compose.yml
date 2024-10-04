@@ -1,0 +1,11 @@
+services:
+  postgresql-product:
+    container_name: pg_sql_product
+    image: postgres
+    environment:
+      POSTGRES_USER: ashin
+      POSTGRES_PASSWORD: ashin
+      POSTGRES_DB: student_db
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
